@@ -9,91 +9,94 @@ body{
 .gallery{
   background-color: #8a1f00;
   display: grid;
+  max-width: 90%;
+  margin: 0 auto;
   gap: 8px;
-  grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
-    "img1 img2 img3"
-    "img4  img2 img5"
-    "img4  img6  img7"
-    ". img8 img10";
+    "img img img2 img2"
+    "img1 img1 img1 img1"
+    "img4 img4 img5 img5"
+    "img7 img7 img7 img7"
+    "img3 img3 img3 img3"
+    "img11 img11 img11 img11";
 }
 .image img{
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 96%;
   border-radius: 6px;
-  margin-left: 8rem;
+  margin-top: 10px;
+  margin-left: 15rem;
 }
 #p1{
-  grid-area: img1;
+  grid-area: img;
 }
 #p2{
-  grid-area: img2;
+  grid-area: img1;
 }
 #p3{
-  grid-area: img3;
+  grid-area: img2;
 }
 #p4{
-  grid-area: img4;
+  grid-area: img3;
 }
 #p5{
-  grid-area: img5;
+  grid-area: img4;
 }
 #p6{
-  grid-area: img6;
-}
-#p7{
-  grid-area: img7;
+  grid-area: img5;
 }
 #p8{
-  grid-area: img8;
+  grid-area: img7;
 }
 #p9{
+  grid-area: img11;
+}
+#p10{
   grid-area: img10;
 }
-@media(max-width: 768px){
-  .gallery{
-    display: grid;
-  background-color: #8a1f00;
-  gap: 8px;
-  grid-template-columns: repeat(2, 10rem);
-    grid-template-rows: repeat(6, 10rem);
-    grid-template-areas: 
-      "img1 img2"
-      "img3 img2"
-      "img4 img6"
-      "img5 img5"
-      "img8 img7"
-      "img10 img10";
-  }
-/* .image img{ */
-/*   object-fit: cover; */
-/*   width: 100%; */
-/*   height: 100%; */
+/* @media(max-width: 768px){ */
+/*   .gallery{ */
+/*     display: grid; */
+/*   background-color: #8a1f00; */
+/*   gap: 8px; */
+/*   grid-template-columns: repeat(2, 10rem); */
+/*     grid-template-rows: repeat(6, 1fr); */
+/*     grid-template-areas:  */
+/*       "img img2" */
+/*       "img3 img2" */
+/*       "img3 img6" */
+/*       "img5 img5" */
+/*       "img7 img7" */
+/*       "img11 img11"; */
+/*   } */
+/* #p1{ */
+/*   grid-area: img1; */
 /* } */
-#p1{
-  grid-area: img1;
-}
-#p2{
-  grid-area: img2;
-}
-#p3{
-  grid-area: img3;
-}
-#p4{
-  grid-area: img4;
-}
-#p5{
-  grid-area: img5;
-}
-#p6{
-  grid-area: img6;
-}
-#p7{
-  grid-area: img7;
-}
-#p8{
-  grid-area: img8;
-}
-}
+/* #p2{ */
+/*   grid-area: img2; */
+/* } */
+/* #p3{ */
+/*   grid-area: img3; */
+/* } */
+/* #p4{ */
+/*   grid-area: img4; */
+/* } */
+/* #p5{ */
+/*   grid-area: img5; */
+/* } */
+/* #p6{ */
+/*   grid-area: img6; */
+/* } */
+/* #p8{ */
+/*   grid-area: img8; */
+/* } */
+/* #p9{ */
+/*   grid-area: img11; */
+/* } */
+/* #p10{ */
+/*   grid-area: img10; */
+/* } */
+/* } */
