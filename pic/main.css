@@ -2,106 +2,99 @@ body{
   background-color: #f0c4a8;
 }
 .contain{
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   background-color: #ececec;
 }
 .gallery{
-  background-color: #8a1f00;
   display: grid;
-  margin: 0 auto;
-  gap: 8px;
-  grid-template-columns: repeat(4, 10rem);
-    grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
-    "img img img2 img2"
-    "img1 img1 img1 img1"
-    "img4 img4 img5 img5"
-    "img7 img7 img7 img7"
-    "img3 img3 img3 img3"
-    "img11 img11 img11 img11";
+    "my my my my"
+    "bird hill hill hill"
+    "face face face photo"
+    "chain chain dish dish"
+    "box box camera camera";
+    gap: 10px;
 }
-.image img{
-  object-fit: cover;
+.img img{
   width: 100%;
-  height: 96%;
-  border-radius: 6px;
-  margin-top: 10px;
-  /* margin-left: 20rem; */
+  object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
 }
-#p1{
-  grid-area: img;
+#i1{
+  grid-area: my;
 }
-#p2{
-  grid-area: img1;
+#i2{
+  grid-area: bird;
 }
-#p3{
-  grid-area: img2;
+#i3{
+  grid-area: hill;
 }
-#p4{
-  grid-area: img3;
+#i4{
+  grid-area: dish;
 }
-#p5{
-  grid-area: img4;
+#i5{
+  grid-area: face;
 }
-#p6{
-  grid-area: img5;
+#i6{
+  grid-area: box;
 }
-#p8{
-  grid-area: img7;
+#i7{
+  grid-area: photo;
 }
-#p9{
-  grid-area: img11;
+#i8{
+  grid-area: chain;
 }
-#p10{
-  grid-area: img10;
+#i9{
+  grid-area: camera;
 }
-@media(max-width:768px){
-  .gallery{
-max-width:100%;
-    padding:1rem;
-   grid-template-rows: repeat(6, 20rem);
-   grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "img1 img1"
-      "img img2"
-      "img7 img7"
-      "img3 img3"
-      "img11 img11"
-      "img4 img4";
-  }
-  #p2{
-    grid-area: img1;
-  }
-#p1{
-  grid-area: img;
+@media(max-width: 768px){
+.gallery{
+  grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "my my"
+    "bird hill"
+    "face photo"
+    "chain dish"
+    "box camera";
+    gap: 10px;
 }
-#p5{
-  grid-area: img4;
+.img img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
 }
-#p3{
-  grid-area: img2;
+#i1{
+  grid-area: my;
 }
-#p8{
-  grid-area: img7;
+#i2{
+  grid-area: bird;
 }
-#p4{
-  grid-area: img3;
+#i3{
+  grid-area: hill;
 }
-#p9{
-  grid-area: img11;
+#i4{
+  grid-area: dish;
 }
-  
-/* .image{ */
-/*   display: flex; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/* } */
-  .image img{
-    object-fit: cover;
-    /* display: grid; */
-    margin-right: 20rem;
-    width: 100%;
-    height: 100%;
-  }
+#i5{
+  grid-area: face;
 }
+#i6{
+  grid-area: box;
+}
+#i7{
+  grid-area: photo;
+}
+#i8{
+  grid-area: chain;
+}
+#i9{
+  grid-area: camera;
+}
+}
+
